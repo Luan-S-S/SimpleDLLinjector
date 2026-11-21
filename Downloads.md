@@ -1,0 +1,6 @@
+Baixe a verssão correta do injetor para o processo alvo:
+
+- [Clique aqui para baixar 
+ Injetor x86](https://www.mediafire.com/file/y3hydgx4fzieth7/InjetorDLL_Simples_x86.zip/file)
+
+- [Clique aqui para baixar Injetor x64](https://www.mediafire.com/file/gv4850rbp82nsqd/InjetorDLL_Simples_x64.zip/file)
