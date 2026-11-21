@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x86</Platforms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Content Include="NativeDLLs\**\*.dll">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  <TargetPath>%(Filename)%(Extension)</TargetPath>
+	</Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\x86\Release\net9.0-windows\DllLdrLoadDll.dll" />
+    <None Include="bin\x86\Release\net9.0-windows\DllLoadA.dll" />
+    <None Include="bin\x86\Release\net9.0-windows\DllLoadW.dll" />
+    <None Include="bin\x86\Release\net9.0-windows\SeDebugPrivilegeDll.dll" />
+    <None Include="bin\x86\Release\net9.0-windows\UnHookDLL.dll" />
+  </ItemGroup>
+
+</Project>
